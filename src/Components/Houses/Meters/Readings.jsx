@@ -4,7 +4,7 @@ import ReadingTable from "./MeterReadingsTable";
 function Readings() {
   return (
     <div>
-      Readings
+      <h1> Your Readings</h1>
       <ReadingTable type={"Electricity"}></ReadingTable>
       <ReadingTable type={"Gas"}></ReadingTable>
     </div>

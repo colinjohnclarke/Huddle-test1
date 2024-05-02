@@ -6,14 +6,15 @@ import SearchHouses from "../Components/Houses/SearchHouses";
 function Home() {
   const [searchResult, setSearchResult] = useState("");
 
-  console.log("searchResult", searchResult);
-
   let filteredHouses = houses?.filter((house) => {
     const result = searchResult?.toLowerCase();
 
     return (
       house.address.city.toLowerCase().includes(result) ||
-      house.address.streetAddress.toLowerCase().includes(result)
+      house.address.streetAddress.toLowerCase().includes(result) ||
+      house.numberOfTenants.toString().toLowerCase().includes(result) ||
+      house.houseType.toLowerCase().includes(result) ||
+      house.bedroomNumber.toLowerCase().includes(result)
     );
   });
 
@@ -27,7 +28,10 @@ function Home() {
         Manage the readings of home gas and electricity meters
       </p>
 
-      <SearchHouses setSearchResult={setSearchResult} />
+      <div style={styles.search}>
+        {" "}
+        <SearchHouses setSearchResult={setSearchResult} />
+      </div>
 
       <h2> Houses </h2>
       <div style={styles.houseContainer}>
@@ -53,9 +57,17 @@ const styles = {
     marginBottom: "10px",
     color: "#4e4e4e",
     color: "white",
+    padding: "10px",
   },
   houseContainer: {
     marginTop: "20px",
+  },
+  houseContainer: {
+    marginLeft: "30px",
+  },
+  search: {
+    display: "flex",
+    justifyContent: "center",
   },
 };
 

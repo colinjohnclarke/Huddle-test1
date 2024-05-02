@@ -3,11 +3,13 @@ import EnterReadingModal from "./EnterReadingModal";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import Notification from "./Notification";
+import { BarLoader } from "react-spinners";
 
 function MeterReadingsTable({ type }) {
   const { houseId, streetAddress, city } = useParams();
   const [meterReadings, setMeterReadings] = useState([]);
-
+  const [showNotification, setShowNotification] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const addMeterReading = () => {
@@ -44,6 +46,7 @@ function MeterReadingsTable({ type }) {
           type={type}
           setIsModalOpen={setIsModalOpen}
           setMeterReadings={setMeterReadings}
+          setShowNotification={setShowNotification}
         />
       )}
       <h2 style={styles.heading}>
@@ -112,6 +115,15 @@ function MeterReadingsTable({ type }) {
       <button style={styles.addButton} onClick={addMeterReading}>
         Add {type} Meter Reading
       </button>
+
+      <div>
+        {showNotification && (
+          <Notification
+            setShowNotification={setShowNotification}
+            message="New reading added successfully"
+          />
+        )}
+      </div>
     </div>
   );
 }

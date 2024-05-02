@@ -2,141 +2,93 @@ export const houses = [
   {
     id: 1,
     address: {
-      city: "New York",
-      streetAddress: "123 Main Street",
+      city: "London",
+      streetAddress: "12 Piccadilly",
     },
-  },
-  {
-    id: 2,
-    address: {
-      city: "Los Angeles",
-      streetAddress: "456 Elm Avenue",
-    },
+    numberOfTenants: 2,
+    houseType: "terraced",
+    bedroomNumber: "5",
   },
   {
     id: 3,
     address: {
       city: "London",
-      streetAddress: "789 Oak Road",
+      streetAddress: "10 Oxford Street",
     },
+    numberOfTenants: 3,
+    houseType: "apartment",
+    bedroomNumber: "2",
   },
   {
     id: 4,
     address: {
       city: "London",
-      streetAddress: "10 Downing Street",
+      streetAddress: "5 Regent's Park",
     },
+    numberOfTenants: 1,
+    houseType: "studio",
+    bedroomNumber: "1",
   },
   {
     id: 5,
     address: {
       city: "London",
-      streetAddress: "221B Baker Street",
+      streetAddress: "15 Kensington High Street",
     },
+    numberOfTenants: 4,
+    houseType: "detached",
+    bedroomNumber: "6",
   },
   {
     id: 6,
     address: {
       city: "London",
-      streetAddress: "1 Leicester Square",
+      streetAddress: "8 Covent Garden",
     },
+    numberOfTenants: 2,
+    houseType: "terraced",
+    bedroomNumber: "4",
   },
+
   {
     id: 7,
     address: {
       city: "London",
-      streetAddress: "30 St Mary Axe",
+      streetAddress: "20 Notting Hill",
     },
+    numberOfTenants: 3,
+    houseType: "semi-detached",
+    bedroomNumber: "3",
   },
   {
     id: 8,
     address: {
       city: "London",
-      streetAddress: "25 Old Broad Street",
+      streetAddress: "15 Kensington High Street",
     },
+    numberOfTenants: 4,
+    houseType: "detached",
+    bedroomNumber: "6",
   },
   {
     id: 9,
     address: {
-      city: "London",
-      streetAddress: "20 Fenchurch Street",
+      city: "Machester",
+      streetAddress: "8 Newham Garden",
     },
+    numberOfTenants: 3,
+    houseType: "terraced",
+    bedroomNumber: "4",
   },
+
   {
     id: 10,
     address: {
-      city: "London",
-      streetAddress: "66 Buckingham Palace Road",
+      city: "Leeds",
+      streetAddress: "20 Leeds Hill",
     },
-  },
-  {
-    id: 11,
-    address: {
-      city: "London",
-      streetAddress: "2 Lambeth Hill",
-    },
-  },
-  {
-    id: 12,
-    address: {
-      city: "London",
-      streetAddress: "8 Baker Street",
-    },
-  },
-  {
-    id: 13,
-    address: {
-      city: "London",
-      streetAddress: "5 Strand",
-    },
-  },
-  {
-    id: 14,
-    address: {
-      city: "London",
-      streetAddress: "14 Whitehall",
-    },
-  },
-  {
-    id: 15,
-    address: {
-      city: "London",
-      streetAddress: "42 Parliament Street",
-    },
-  },
-  {
-    id: 16,
-    address: {
-      city: "London",
-      streetAddress: "18 Grosvenor Gardens",
-    },
-  },
-  {
-    id: 17,
-    address: {
-      city: "London",
-      streetAddress: "29 Harley Street",
-    },
-  },
-  {
-    id: 18,
-    address: {
-      city: "London",
-      streetAddress: "7 Bishopsgate",
-    },
-  },
-  {
-    id: 19,
-    address: {
-      city: "London",
-      streetAddress: "9 Savoy Court",
-    },
-  },
-  {
-    id: 20,
-    address: {
-      city: "London",
-      streetAddress: "12 Piccadilly",
-    },
+    numberOfTenants: 2,
+    houseType: "detached",
+    bedroomNumber: "7",
   },
 ];

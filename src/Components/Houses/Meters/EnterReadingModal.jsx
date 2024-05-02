@@ -4,6 +4,7 @@ import axios from "axios";
 function AddMeterReadingModal({
   setMeterReadings,
   setIsModalOpen,
+  setShowNotification,
   type,
   houseId,
 }) {
@@ -35,6 +36,7 @@ function AddMeterReadingModal({
       .then((response) => {
         console.log(response.data);
         setMeterReadings(response.data);
+        setShowNotification(true);
       })
       .catch((error) => {
         console.error("Error:", error);
